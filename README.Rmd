@@ -20,11 +20,11 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/palettehelper)](https://CRAN.R-project.org/package=palettehelper)
 <!-- badges: end -->
 
-The goal of palettehelper is to ...
+The goal of `palettehelper` is to help you build and manage color palettes in R for data viz. I mostly made it for myself!
 
 ## Installation
 
-You can install the development version of palettehelper from [GitHub](https://github.com/) with:
+You can install the development version of `palettehelper` from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -33,25 +33,20 @@ devtools::install_github("MargaretSiple-NOAA/palettehelper")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Expand the very beautiful (but short) color palettes from your favorite palette package.
 
 ```{r example}
+library(RColorBrewer)
 library(palettehelper)
-## basic example code
+
+
+pal <- RColorBrewer::brewer.pal(n = 6,name = "PuBuGn")
+longer_pal <- palettehelper::lengthen_pal(shortpal = pal, newlength = 20)
+print(longer_pal)
+
+par(mfrow=c(1,2))
+scales::show_col(pal)
+scales::show_col(longer_pal)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.

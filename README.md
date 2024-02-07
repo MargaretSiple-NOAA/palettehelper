@@ -11,11 +11,12 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/palettehelper)](https://CRAN.R-project.org/package=palettehelper)
 <!-- badges: end -->
 
-The goal of palettehelper is to …
+The goal of `palettehelper` is to help you build and manage color
+palettes in R for data viz. I mostly made it for myself!
 
 ## Installation
 
-You can install the development version of palettehelper from
+You can install the development version of `palettehelper` from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -25,33 +26,24 @@ devtools::install_github("MargaretSiple-NOAA/palettehelper")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Expand the very beautiful (but short) color palettes from your favorite
+palette package.
 
 ``` r
+library(RColorBrewer)
 library(palettehelper)
-## basic example code
+
+
+pal <- RColorBrewer::brewer.pal(n = 6,name = "PuBuGn")
+longer_pal <- palettehelper::lengthen_pal(shortpal = pal, newlength = 20)
+print(longer_pal)
+#>  [1] "#F6EFF7" "#ECE7F2" "#E2DFEE" "#D8D7E9" "#CDCFE5" "#C2CAE2" "#B7C5DF"
+#>  [8] "#ACC0DC" "#9FBAD9" "#8EB5D6" "#7EB0D3" "#6DABD0" "#5BA5C6" "#479EB8"
+#> [15] "#3397AA" "#1F919B" "#16888B" "#0F7E7A" "#087569" "#016C59"
+
+par(mfrow=c(1,2))
+scales::show_col(pal)
+scales::show_col(longer_pal)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+<img src="man/figures/README-example-1.png" width="100%" />
