@@ -1,5 +1,5 @@
 Package: palettehelper
-Title: For Editing and Visualizing Color Palettes for Better Data Viz
+Title: Color Palette Editing and Visualizing
 Version: 0.0.0.9000
 Authors@R: 
     person("Margaret", "Siple", , "margaret.siple@noaa.gov", role = c("aut", "cre"),

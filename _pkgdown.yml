@@ -1,4 +1,6 @@
 url: https://margaretsiple-noaa.github.io/palettehelper/
 template:
   bootstrap: 5
+navbar:
+  bg: light
 
