@@ -3,7 +3,7 @@ output: github_document
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-# palettehelper <img src="man/figures/logo.png" align="right" />
+
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -13,8 +13,7 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
-
-# palettehelper
+# palettehelper <img src="man/figures/logo.png" align="right" width=250 />
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)

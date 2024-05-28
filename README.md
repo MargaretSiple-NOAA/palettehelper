@@ -1,9 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# palettehelper <img src="man/figures/logo.png" align="right" />
-
-# palettehelper
+# palettehelper <img src="man/figures/logo.png" align="right" width=250 />
 
 <!-- badges: start -->
 
