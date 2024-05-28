@@ -1,6 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# palettehelper <img src="man/figures/logo.png" align="right" />
+
 # palettehelper
 
 <!-- badges: start -->
@@ -40,6 +42,9 @@ print(longer_pal)
 #>  [1] "#F6EFF7" "#ECE7F2" "#E2DFEE" "#D8D7E9" "#CDCFE5" "#C2CAE2" "#B7C5DF"
 #>  [8] "#ACC0DC" "#9FBAD9" "#8EB5D6" "#7EB0D3" "#6DABD0" "#5BA5C6" "#479EB8"
 #> [15] "#3397AA" "#1F919B" "#16888B" "#0F7E7A" "#087569" "#016C59"
+```
+
+``` r
 
 par(mfrow=c(1,2))
 scales::show_col(pal)
