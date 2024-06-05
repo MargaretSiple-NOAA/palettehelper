@@ -12,7 +12,9 @@ status](https://www.r-pkg.org/badges/version/palettehelper)](https://CRAN.R-proj
 <!-- badges: end -->
 
 The goal of `palettehelper` is to help you build and manage color
-palettes in R for data viz. I mostly made it for myself!
+palettes in R for data viz. I mostly made it for myself! And as a test
+package for customizing content in the Fisheries Integrated Toolbox
+documentation.
 
 ## Installation
 
